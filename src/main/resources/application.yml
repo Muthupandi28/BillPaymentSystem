@@ -1,0 +1,11 @@
+server:  #port: 9080  servlet:    context-path: /billPayment
+spring:
+  application:
+    name: billPaymentSystem
+  main:    banner-mode: off    log-startup-info: false  mvc:    view:      suffix: .jsp
+  datasource:    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: BPS
+    password: BPS
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:    hibernate:      ddl-auto: create
+    database-platform: org.hibernate.dialect.Oracle10gDialect 
